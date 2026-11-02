@@ -2,6 +2,14 @@
 
 Aplicação de finanças pessoais criada com ajuda de IA generativa para um workshop. Interface em português brasileiro, dados fictícios de demonstração e armazenamento no navegador. **Não há LLM no aplicativo, API paga, token, backend, integração bancária ou banco de dados externo.**
 
+## Baixar o projeto
+
+O código e o pacote técnico estão no repositório `joaosampaio22/BootCamp-2-`, branch `main`.
+
+[Baixar ID_NAME.zip pelo GitHub](https://github.com/joaosampaio22/BootCamp-2-/raw/refs/heads/main/entrega/ID_NAME.zip). Se o download direto não abrir, acesse a pasta `entrega`, abra `ID_NAME.zip` e clique em **Download raw**. Em repositório privado, entre na conta com acesso.
+
+O site ainda precisa ser ativado no GitHub Pages, conforme `docs/PUBLICACAO.md`. O vídeo narrado e os dados finais da submissão continuam pendentes.
+
 ## Executar no computador
 
 Instale **Node.js 22.12 ou superior** (recomendado: versão LTS). Na pasta que contém `package.json`:

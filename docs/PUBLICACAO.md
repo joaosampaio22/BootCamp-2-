@@ -2,7 +2,7 @@
 
 ## Estado desta entrega
 
-O build estático foi preparado para publicação. **Não há URL pública publicada por esta sessão.** O ambiente não oferece um serviço de hospedagem configurado para este projeto; iniciar um servidor local não cria uma URL acessível aos avaliadores. Não houve push de código nem publicação na conta do usuário.
+O build estático foi preparado para publicação. **Não há URL pública publicada por esta sessão.** O ambiente não oferece um serviço de hospedagem configurado para este projeto; iniciar um servidor local não cria uma URL acessível aos avaliadores. O código e o ZIP técnico foram enviados à branch `main` do repositório `joaosampaio22/BootCamp-2-`. A publicação do site pelo GitHub Pages ainda não foi ativada; o acesso à API do GitHub retornou `Forbidden` nesta sessão, enquanto o envio pelo Git funcionou.
 
 Registre a URL real e a verificação em [ENTREGA.md](ENTREGA.md) depois de publicar. Não entregue um endereço `localhost`, de preview privado ou que peça acesso à sua conta.
 

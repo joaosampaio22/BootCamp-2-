@@ -64,4 +64,4 @@ Outras correções identificadas na verificação de acessibilidade, se presente
 
 ## Papel do participante e pendências
 
-O participante precisa revisar o projeto, gravar e narrar a demonstração, publicar a URL, substituir os marcadores de ID/nome e enviar o ZIP pelo formulário no prazo oficial. Não foi realizada publicação ou submissão automática. A aplicação usa IA como ferramenta de desenvolvimento; não contém LLM em execução.
+O participante precisa revisar o projeto, gravar e narrar a demonstração, publicar a URL, substituir os marcadores de ID/nome e enviar o ZIP pelo formulário no prazo oficial. Após solicitação explícita do participante, o código e o ZIP foram enviados ao GitHub pelo Git. Não foi realizada publicação do site ou submissão do formulário. A aplicação usa IA como ferramenta de desenvolvimento; não contém LLM em execução.

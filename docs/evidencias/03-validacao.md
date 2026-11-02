@@ -45,7 +45,7 @@ A data do navegador foi fixada em 02/11/2026, 12h de São Paulo, somente nos tes
 
 ## Não realizado
 
-Não houve gravação narrada, publicação pública, validação em nova tarefa restaurada a partir de snapshot nem envio do formulário. As pendências estão em `../ENTREGA.md`. O workflow de GitHub Pages foi preparado, mas não foi executado no GitHub nesta sessão.
+Não houve gravação narrada, publicação do aplicativo como site, validação em nova tarefa restaurada a partir de snapshot nem envio do formulário. As pendências estão em `../ENTREGA.md`. O workflow de GitHub Pages foi preparado, mas não foi executado no GitHub nesta sessão.
 
 ## Pacote e ambiente reutilizável
 
@@ -54,3 +54,7 @@ O empacotador foi executado em uma pasta temporária: o ZIP tinha 49 arquivos, r
 Essa cópia de entrega também foi instalada em uma pasta limpa com `npm ci --offline --no-fund --no-audit`, usando o cache já disponível nesta máquina. Nela, `npm test` passou com os mesmos 57 testes e `npm run build` concluiu. O usuário deve usar `npm ci` normal, com acesso ao npm; a opção offline não é um requisito do projeto.
 
 Os campos `install_script` e `start_skill` foram salvos com sucesso no rascunho de configuração da nuvem. A instalação registra `npm ci`, testes e build; a inicialização usa o checkout existente e documenta o processo Vite, que precisa reiniciar em outra máquina. A revisão/salvamento e publicação desse ambiente cabem ao usuário nas configurações. Isso não publica o site nem comprova restauração em nova tarefa.
+
+## Envio ao GitHub
+
+Após solicitação do participante, `git push -u origin main` concluiu com sucesso e criou a branch remota `main`, incluindo código, documentação, capturas e `entrega/ID_NAME.zip`. A API do GitHub havia retornado `Forbidden`, mas o acesso de escrita pelo proxy Git funcionou. O envio do repositório não ativa automaticamente o site no GitHub Pages.
