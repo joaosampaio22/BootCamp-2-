@@ -1,0 +1,858 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/BootCamp-2-/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/workspace/BootCamp-2-/playwright.config.ts",
+    "rootDir": "/workspace/BootCamp-2-/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/BootCamp-2-/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop-chromium",
+        "name": "desktop-chromium",
+        "testDir": "/workspace/BootCamp-2-/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/workspace/BootCamp-2-/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile-chromium",
+        "name": "mobile-chromium",
+        "testDir": "/workspace/BootCamp-2-/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/workspace/BootCamp-2-/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "desktop-chromium",
+        "testDir": "/workspace/BootCamp-2-/tests",
+        "snapshotDir": "/workspace/BootCamp-2-/tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "locale": "pt-BR",
+          "timezoneId": "America/Sao_Paulo",
+          "trace": "retain-on-failure",
+          "launchOptions": {
+            "executablePath": "/usr/bin/chromium"
+          },
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1440,
+            "height": 1050
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "desktop-chromium"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/workspace/BootCamp-2-/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "mobile-chromium",
+        "testDir": "/workspace/BootCamp-2-/tests",
+        "snapshotDir": "/workspace/BootCamp-2-/tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "locale": "pt-BR",
+          "timezoneId": "America/Sao_Paulo",
+          "trace": "retain-on-failure",
+          "launchOptions": {
+            "executablePath": "/usr/bin/chromium"
+          },
+          "userAgent": "Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Mobile Safari/537.36",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "screen": {
+            "width": 412,
+            "height": 915
+          },
+          "deviceScaleFactor": 2.625,
+          "isMobile": true,
+          "hasTouch": true,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "mobile-chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/e2e-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run preview -- --host 127.0.0.1 --port 4173 --strictPort",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": true,
+      "timeout": 20000
+    }
+  },
+  "suites": [
+    {
+      "title": "app.spec.ts",
+      "file": "app.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "demonstração, criação, edição, exclusão e persistência recalculam o painel",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1951,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T17:55:51.443Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-de1599bdf907b3f40c2f",
+          "file": "app.spec.ts",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "filtros por mês, tipo e categoria exibem somente os lançamentos esperados",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30098,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/BootCamp-2-/tests/app.spec.ts",
+                        "column": 50,
+                        "line": 60
+                      },
+                      "message": "Error: locator.selectOption: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('Tipo', { exact: true })\u001b[22m\n\n\n  58 | test('filtros por mês, tipo e categoria exibem somente os lançamentos esperados', async ({ page }) => {\n  59 |   await demo(page); await nav(page, 'Lançamentos');\n> 60 |   await page.getByLabel('Tipo', { exact: true }).selectOption('income');\n     |                                                  ^\n  61 |   await expect(page.locator('tbody tr')).toHaveCount(2);\n  62 |   await page.getByLabel('Categoria', { exact: true }).selectOption('salary');\n  63 |   await expect(page.locator('tbody tr')).toHaveCount(1);\n    at /workspace/BootCamp-2-/tests/app.spec.ts:60:50"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T17:55:53.895Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/BootCamp-2-/test-results/app-filtros-por-mês-tipo-e-79970-te-os-lançamentos-esperados-desktop-chromium/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/BootCamp-2-/test-results/app-filtros-por-mês-tipo-e-79970-te-os-lançamentos-esperados-desktop-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-304124a224c6e868298b",
+          "file": "app.spec.ts",
+          "line": 58,
+          "column": 1
+        },
+        {
+          "title": "limite mensal mostra atenção, excesso e conquista sem duplicar orçamento",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1013,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T17:56:24.521Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-87af302ecf2859940b26",
+          "file": "app.spec.ts",
+          "line": 72,
+          "column": 1
+        },
+        {
+          "title": "previsão não afeta gastos; confirmar conta uma vez e excluir reabre a conta",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1674,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T17:56:25.747Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-1be65fe794ab8f67d7bb",
+          "file": "app.spec.ts",
+          "line": 85,
+          "column": 1
+        },
+        {
+          "title": "backup exportado é válido; importação inválida e cancelamento preservam os dados",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1221,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T17:56:27.438Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-bdd0f67f0aaf203e538f",
+          "file": "app.spec.ts",
+          "line": 114,
+          "column": 1
+        },
+        {
+          "title": "revisão semanal e fechamento concedem conquistas; demonstração pede confirmação",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1189,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T17:56:28.674Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-975af2b9d9855b86a9ec",
+          "file": "app.spec.ts",
+          "line": 138,
+          "column": 1
+        },
+        {
+          "title": "dados locais corrompidos são preservados; recuperação não é substituída por zeros",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 841,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T17:56:29.878Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-eca26b0fbe35beb1b06e",
+          "file": "app.spec.ts",
+          "line": 154,
+          "column": 1
+        },
+        {
+          "title": "interface em todas as páginas, teclado e capturas reais da demonstração",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6439,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('dialog').getByLabel('Descrição')\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" getByRole('dialog').getByLabel('Descrição') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').getByLabel('Descrição')\u001b[22m\n\u001b[2m    14 × locator resolved to <input required=\"\" maxlength=\"100\" name=\"description\" placeholder=\"Ex.: compras da semana\"/>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('dialog').getByLabel('Descrição')\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" getByRole('dialog').getByLabel('Descrição') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').getByLabel('Descrição')\u001b[22m\n\u001b[2m    14 × locator resolved to <input required=\"\" maxlength=\"100\" name=\"description\" placeholder=\"Ex.: compras da semana\"/>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n    at /workspace/BootCamp-2-/tests/app.spec.ts:179:66",
+                    "location": {
+                      "file": "/workspace/BootCamp-2-/tests/app.spec.ts",
+                      "column": 66,
+                      "line": 179
+                    },
+                    "snippet": "  177 |   await nav(page, 'Lançamentos');\n  178 |   await page.getByRole('button', { name: 'Novo lançamento', exact: true }).click();\n> 179 |   await expect(page.getByRole('dialog').getByLabel('Descrição')).toBeFocused();\n      |                                                                  ^\n  180 |   await page.keyboard.press('Escape');\n  181 |   await expect(page.getByRole('dialog')).toHaveCount(0);\n  182 |   expect((await page.evaluate(key => JSON.parse(localStorage.getItem(key)!), STORAGE_KEY))).toEqual(demoData('2026-11'));"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/BootCamp-2-/tests/app.spec.ts",
+                        "column": 66,
+                        "line": 179
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('dialog').getByLabel('Descrição')\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" getByRole('dialog').getByLabel('Descrição') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').getByLabel('Descrição')\u001b[22m\n\u001b[2m    14 × locator resolved to <input required=\"\" maxlength=\"100\" name=\"description\" placeholder=\"Ex.: compras da semana\"/>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n\n  177 |   await nav(page, 'Lançamentos');\n  178 |   await page.getByRole('button', { name: 'Novo lançamento', exact: true }).click();\n> 179 |   await expect(page.getByRole('dialog').getByLabel('Descrição')).toBeFocused();\n      |                                                                  ^\n  180 |   await page.keyboard.press('Escape');\n  181 |   await expect(page.getByRole('dialog')).toHaveCount(0);\n  182 |   expect((await page.evaluate(key => JSON.parse(localStorage.getItem(key)!), STORAGE_KEY))).toEqual(demoData('2026-11'));\n    at /workspace/BootCamp-2-/tests/app.spec.ts:179:66"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T17:56:30.734Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/BootCamp-2-/test-results/app-interface-em-todas-as--22516-turas-reais-da-demonstração-desktop-chromium/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/BootCamp-2-/test-results/app-interface-em-todas-as--22516-turas-reais-da-demonstração-desktop-chromium/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/BootCamp-2-/tests/app.spec.ts",
+                    "column": 66,
+                    "line": 179
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-c9ed33ab3961d848f0d8",
+          "file": "app.spec.ts",
+          "line": 167,
+          "column": 1
+        },
+        {
+          "title": "demonstração, criação, edição, exclusão e persistência recalculam o painel",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1494,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T17:56:37.755Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-9bcfae34f8168b69e84d",
+          "file": "app.spec.ts",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "filtros por mês, tipo e categoria exibem somente os lançamentos esperados",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30085,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/BootCamp-2-/tests/app.spec.ts",
+                        "column": 50,
+                        "line": 60
+                      },
+                      "message": "Error: locator.selectOption: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('Tipo', { exact: true })\u001b[22m\n\n\n  58 | test('filtros por mês, tipo e categoria exibem somente os lançamentos esperados', async ({ page }) => {\n  59 |   await demo(page); await nav(page, 'Lançamentos');\n> 60 |   await page.getByLabel('Tipo', { exact: true }).selectOption('income');\n     |                                                  ^\n  61 |   await expect(page.locator('tbody tr')).toHaveCount(2);\n  62 |   await page.getByLabel('Categoria', { exact: true }).selectOption('salary');\n  63 |   await expect(page.locator('tbody tr')).toHaveCount(1);\n    at /workspace/BootCamp-2-/tests/app.spec.ts:60:50"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T17:56:39.492Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/BootCamp-2-/test-results/app-filtros-por-mês-tipo-e-79970-te-os-lançamentos-esperados-mobile-chromium/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/BootCamp-2-/test-results/app-filtros-por-mês-tipo-e-79970-te-os-lançamentos-esperados-mobile-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-d81e6c4314525b150a1a",
+          "file": "app.spec.ts",
+          "line": 58,
+          "column": 1
+        },
+        {
+          "title": "limite mensal mostra atenção, excesso e conquista sem duplicar orçamento",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 905,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T17:57:10.168Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-18667dfcbf73d22e3408",
+          "file": "app.spec.ts",
+          "line": 72,
+          "column": 1
+        },
+        {
+          "title": "previsão não afeta gastos; confirmar conta uma vez e excluir reabre a conta",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1487,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T17:57:11.290Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-b265d016b152ebffd1f6",
+          "file": "app.spec.ts",
+          "line": 85,
+          "column": 1
+        },
+        {
+          "title": "backup exportado é válido; importação inválida e cancelamento preservam os dados",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1170,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T17:57:12.790Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-d6656f2bff2fb6912b27",
+          "file": "app.spec.ts",
+          "line": 114,
+          "column": 1
+        },
+        {
+          "title": "revisão semanal e fechamento concedem conquistas; demonstração pede confirmação",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1040,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T17:57:13.974Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-52bef13e6d1dfa143454",
+          "file": "app.spec.ts",
+          "line": 138,
+          "column": 1
+        },
+        {
+          "title": "dados locais corrompidos são preservados; recuperação não é substituída por zeros",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 699,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T17:57:15.045Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-3b4764b92664d558e578",
+          "file": "app.spec.ts",
+          "line": 154,
+          "column": 1
+        },
+        {
+          "title": "interface em todas as páginas, teclado e capturas reais da demonstração",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6567,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('dialog').getByLabel('Descrição')\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" getByRole('dialog').getByLabel('Descrição') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').getByLabel('Descrição')\u001b[22m\n\u001b[2m    14 × locator resolved to <input required=\"\" maxlength=\"100\" name=\"description\" placeholder=\"Ex.: compras da semana\"/>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('dialog').getByLabel('Descrição')\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" getByRole('dialog').getByLabel('Descrição') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').getByLabel('Descrição')\u001b[22m\n\u001b[2m    14 × locator resolved to <input required=\"\" maxlength=\"100\" name=\"description\" placeholder=\"Ex.: compras da semana\"/>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n    at /workspace/BootCamp-2-/tests/app.spec.ts:179:66",
+                    "location": {
+                      "file": "/workspace/BootCamp-2-/tests/app.spec.ts",
+                      "column": 66,
+                      "line": 179
+                    },
+                    "snippet": "  177 |   await nav(page, 'Lançamentos');\n  178 |   await page.getByRole('button', { name: 'Novo lançamento', exact: true }).click();\n> 179 |   await expect(page.getByRole('dialog').getByLabel('Descrição')).toBeFocused();\n      |                                                                  ^\n  180 |   await page.keyboard.press('Escape');\n  181 |   await expect(page.getByRole('dialog')).toHaveCount(0);\n  182 |   expect((await page.evaluate(key => JSON.parse(localStorage.getItem(key)!), STORAGE_KEY))).toEqual(demoData('2026-11'));"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/BootCamp-2-/tests/app.spec.ts",
+                        "column": 66,
+                        "line": 179
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('dialog').getByLabel('Descrição')\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" getByRole('dialog').getByLabel('Descrição') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog').getByLabel('Descrição')\u001b[22m\n\u001b[2m    14 × locator resolved to <input required=\"\" maxlength=\"100\" name=\"description\" placeholder=\"Ex.: compras da semana\"/>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n\n  177 |   await nav(page, 'Lançamentos');\n  178 |   await page.getByRole('button', { name: 'Novo lançamento', exact: true }).click();\n> 179 |   await expect(page.getByRole('dialog').getByLabel('Descrição')).toBeFocused();\n      |                                                                  ^\n  180 |   await page.keyboard.press('Escape');\n  181 |   await expect(page.getByRole('dialog')).toHaveCount(0);\n  182 |   expect((await page.evaluate(key => JSON.parse(localStorage.getItem(key)!), STORAGE_KEY))).toEqual(demoData('2026-11'));\n    at /workspace/BootCamp-2-/tests/app.spec.ts:179:66"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-02T17:57:15.757Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/BootCamp-2-/test-results/app-interface-em-todas-as--22516-turas-reais-da-demonstração-mobile-chromium/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/BootCamp-2-/test-results/app-interface-em-todas-as--22516-turas-reais-da-demonstração-mobile-chromium/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/BootCamp-2-/tests/app.spec.ts",
+                    "column": 66,
+                    "line": 179
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "c31ff144dc4fee3acd0a-8da5a518492bd5d90fb7",
+          "file": "app.spec.ts",
+          "line": 167,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-02T17:55:50.406Z",
+    "duration": 92086.545,
+    "expected": 12,
+    "skipped": 0,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}

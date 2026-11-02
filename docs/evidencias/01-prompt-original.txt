@@ -1,0 +1,64 @@
+Quero que você desenvolva um projeto final funcional para um workshop de IA generativa. Crie uma **aplicação web de controle de finanças pessoais**, em português brasileiro, que eu consiga executar no meu computador, demonstrar no navegador e publicar em uma URL acessível aos avaliadores.
+
+O objetivo do workshop é mostrar como usei IA generativa durante o desenvolvimento para transformar uma ideia em uma aplicação funcional que resolve uma necessidade cotidiana. **Não coloque LLM dentro do aplicativo. Não use APIs pagas, tokens, conexão bancária nem dados financeiros reais.** Sua participação na criação deve ficar documentada com evidências verdadeiras.
+
+## Conceito do produto
+
+Crie um app com nome provisório **Clareza Financeira**. Ele deve ajudar uma pessoa a responder três perguntas:
+
+1. Quanto entrou e saiu neste mês?
+2. Em quais categorias estou gastando?
+3. Quais despesas recorrentes já estão previstas para os próximos meses?
+
+Quero uma interface agradável, responsiva e fácil de usar no celular e no computador. Priorize um fluxo completo e confiável. Evite funções que ampliem demais o escopo, como investimentos, integração com bancos, compartilhamento entre usuários ou aconselhamento financeiro.
+
+## Tecnologia e execução
+
+Use **React, TypeScript e Vite**, com armazenamento local no navegador. Não crie backend nem exija Docker ou banco de dados externo. Inclua exportação e importação de backup em JSON para que eu possa preservar ou restaurar meus dados. O projeto deve funcionar após instalar as dependências e executar os comandos documentados. Prepare também uma versão de produção que possa ser hospedada como site estático.
+
+Se encontrar uma limitação importante nessa escolha técnica, explique-a antes de alterar a arquitetura. Não adicione serviços que exijam pagamento.
+
+## Funcionalidades obrigatórias
+
+**Lançamentos:** permitir criar, editar e excluir receitas e despesas com data, descrição, valor e categoria. Validar os campos e confirmar exclusões. Permitir filtrar por mês, tipo e categoria.
+
+**Painel mensal:** apresentar total de receitas, total de despesas e resultado do mês. Mostrar gastos por categoria e uma lista dos lançamentos recentes. Os números devem ser recalculados corretamente após qualquer alteração.
+
+**Orçamentos:** permitir definir um limite mensal por categoria e mostrar quanto já foi usado. Indicar quando o usuário estiver próximo do limite ou o tiver ultrapassado. Deixe claro que se trata de um limite definido pelo usuário, não de uma recomendação financeira.
+
+**Despesas recorrentes:** permitir cadastrar uma conta com descrição, valor, categoria, dia de vencimento e periodicidade mensal. Mostrar os compromissos previstos para os próximos três meses. Uma previsão não deve virar automaticamente uma despesa realizada: o usuário precisa confirmar o pagamento. Evite contabilizar duas vezes a mesma conta.
+
+**Dados de demonstração:** incluir uma opção clara para carregar um conjunto pequeno e inteiramente fictício de receitas, despesas, orçamentos e recorrências. Ela deve permitir que qualquer avaliador teste o aplicativo imediatamente. A opção de demonstração não pode sobrescrever dados existentes sem confirmação.
+
+**Gamificação discreta:** incluir algumas conquistas relacionadas a ações úteis, como configurar o primeiro orçamento, conferir os lançamentos da semana e concluir o primeiro fechamento mensal. Não dê pontos por gastar dinheiro ou por cadastrar lançamentos repetidos. A gamificação deve poder ser entendida sem ser necessária para usar as funções financeiras.
+
+## Qualidade e regras de negócio
+
+Use valores monetários de forma segura para evitar erros de arredondamento nos cálculos. Trate meses com quantidades diferentes de dias, ausência de lançamentos, importações inválidas e dados locais incompletos. A interface deve explicar a diferença entre **despesa realizada** e **despesa prevista**.
+
+Inclua testes para os cálculos e regras que realmente poderiam gerar erros: totais mensais, orçamentos, recorrências, confirmação de pagamento e prevenção de duplicidade. Execute os testes e o build de produção; corrija os problemas encontrados. Verifique a interface em tamanhos de tela de celular e computador.
+
+## Requisitos da entrega do workshop
+
+O aplicativo deve resolver uma situação real do cotidiano, ser verificável por qualquer pessoa e funcionar durante a apresentação. Preciso entregar um **ZIP** pelo formulário que a equipe de Talent Development fornecerá, dentro do prazo que ela informar. A pasta principal deve ter o formato **ID_NAME** — deixe instruções para eu substituir esses marcadores pelo meu ID e nome corretos.
+
+Prepare a pasta de entrega com:
+
+- **Código-fonte** em arquivos de texto, incluindo as instruções para instalar, executar, testar e gerar o build.
+- **Documentação** clara sobre o problema, objetivo, público, funcionalidades, tecnologias, regras de negócio, limitações e modo de execução.
+- **Evidências reais do uso de IA generativa no desenvolvimento:** registre este prompt, as decisões tomadas com sua ajuda, partes relevantes do código criadas ou revisadas com IA e exemplos de erros encontrados e corrigidos. Não invente conversas, capturas, testes ou resultados.
+- **Roteiro de vídeo narrado** com uma demonstração completa: carregar dados fictícios, criar um lançamento, verificar o painel, definir um orçamento, confirmar uma conta recorrente e mostrar uma conquista. Deixe indicado onde devo colocar o vídeo gravado ou o URL acessível. Eu farei a gravação e a narração se você não puder produzi-las.
+- **Instruções de publicação** da versão estática e um local para registrar a URL pública do aplicativo. Se você puder publicar no ambiente disponível e tiver a autorização necessária, faça isso e teste a URL. Caso contrário, entregue passos precisos para eu publicar e verificar o acesso.
+
+Não use dados da TCS nem de clientes na aplicação ou no material de demonstração. Não exponha informações sensíveis nem chaves no código ou em vídeos. Mantenha o tema apropriado para um ambiente profissional.
+
+## Como trabalhar
+
+Comece verificando o ambiente e os arquivos disponíveis. Implemente o aplicativo de verdade, em etapas, até que esteja executável. Tome decisões razoáveis de interface e estrutura sem me interromper para escolhas pequenas. Ao terminar, informe:
+
+1. O que foi implementado e o que foi testado.
+2. Os comandos exatos para eu executar no meu computador.
+3. Onde estão o código, a documentação, as evidências e o roteiro.
+4. O que ainda depende de mim para a submissão: gravação narrada, URL acessível, ID e nome da pasta, prazo e preenchimento do formulário.
+
+Não declare a entrega pronta para submissão se o vídeo, a URL ou outro requisito obrigatório ainda estiverem pendentes.

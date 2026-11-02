@@ -1,0 +1,5 @@
+
+> clareza-financeira@1.0.0 test
+> vitest run --reporter=json --outputFile=docs/evidencias/testes/unit-final.json
+
+JSON report written to /workspace/BootCamp-2-/docs/evidencias/testes/unit-final.json
